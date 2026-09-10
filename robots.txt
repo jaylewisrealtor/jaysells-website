@@ -1,0 +1,19 @@
+# Allow all standard search engine crawlers
+User-agent: *
+Allow: /
+
+# Explicitly allow AI/answer-engine crawlers (GEO/AEO) so tools like
+# ChatGPT, Perplexity, and Google's AI Overviews can read and cite this site.
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+Sitemap: https://jaysells.ca/sitemap.xml

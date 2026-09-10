@@ -1,0 +1,351 @@
+/* ============================================================
+   BRAND VARIABLES
+   Change these to rebrand the entire site instantly — colors,
+   fonts, spacing all pull from here. This is the first place
+   to look when you want to tweak the look.
+   ============================================================ */
+:root {
+  --color-navy: #0f2a43;
+  --color-navy-light: #16385a;
+  --color-gold: #b8894a;
+  --color-gold-light: #d9a86a;
+  --color-bg: #ffffff;
+  --color-bg-alt: #f6f4f0;
+  --color-text: #1c1c1c;
+  --color-text-muted: #5a5a5a;
+  --font-heading: Georgia, 'Times New Roman', serif;
+  --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --max-width: 1100px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--color-text);
+  background: var(--color-bg);
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-heading);
+  color: var(--color-navy);
+  line-height: 1.2;
+}
+
+a {
+  color: var(--color-navy);
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* HEADER */
+.site-header {
+  border-bottom: 1px solid #e5e2db;
+  position: sticky;
+  top: 0;
+  background: var(--color-bg);
+  z-index: 100;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.logo {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--color-navy);
+  text-decoration: none;
+}
+
+.logo span {
+  color: var(--color-gold);
+  font-weight: normal;
+}
+
+.main-nav {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: var(--color-text);
+  font-size: 0.95rem;
+}
+
+.main-nav a:hover {
+  color: var(--color-gold);
+}
+
+.nav-cta {
+  background: var(--color-navy);
+  color: #fff !important;
+  padding: 8px 18px;
+  border-radius: 4px;
+}
+
+.nav-cta:hover {
+  background: var(--color-navy-light);
+}
+
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.nav-toggle span {
+  width: 24px;
+  height: 2px;
+  background: var(--color-navy);
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(135deg, var(--color-navy), var(--color-navy-light));
+  color: #fff;
+  padding: 90px 0;
+  text-align: center;
+}
+
+.hero h1 {
+  color: #fff;
+  font-size: 2.4rem;
+  max-width: 800px;
+  margin: 0 auto 20px;
+}
+
+.hero-sub {
+  color: #d7dee6;
+  max-width: 620px;
+  margin: 0 auto 32px;
+  font-size: 1.1rem;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* BUTTONS */
+.btn {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+  border: 2px solid transparent;
+  font-size: 1rem;
+}
+
+.btn-primary {
+  background: var(--color-gold);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: var(--color-gold-light);
+}
+
+.hero .btn-secondary {
+  background: transparent;
+  color: #fff;
+  border-color: #fff;
+}
+
+.hero .btn-secondary:hover {
+  background: #fff;
+  color: var(--color-navy);
+}
+
+/* SECTIONS */
+.section {
+  padding: 70px 0;
+}
+
+.section-alt {
+  background: var(--color-bg-alt);
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.section p {
+  color: var(--color-text-muted);
+  max-width: 720px;
+}
+
+.check-list {
+  list-style: none;
+  padding: 0;
+  margin: 24px 0;
+  max-width: 600px;
+}
+
+.check-list li {
+  padding-left: 28px;
+  position: relative;
+  margin-bottom: 12px;
+  color: var(--color-text);
+}
+
+.check-list li::before {
+  content: "✓";
+  color: var(--color-gold);
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+/* AREAS GRID */
+.areas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 12px;
+  margin: 24px 0;
+  max-width: 800px;
+}
+
+.areas-grid span {
+  background: var(--color-bg-alt);
+  border: 1px solid #e5e2db;
+  border-radius: 4px;
+  padding: 14px 16px;
+  text-align: center;
+  font-weight: 600;
+  color: var(--color-navy);
+}
+
+.areas-note {
+  font-size: 0.9rem;
+}
+
+/* ABOUT */
+.brokerage-line {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  margin-top: 16px;
+}
+
+/* FAQ */
+.faq-item {
+  border-bottom: 1px solid #e5e2db;
+  padding: 20px 0;
+  max-width: 760px;
+}
+
+.faq-item h3 {
+  font-size: 1.15rem;
+  margin: 0 0 8px;
+}
+
+.faq-item p {
+  margin: 0;
+}
+
+/* CONTACT FORM */
+.contact-form {
+  display: grid;
+  gap: 16px;
+  max-width: 500px;
+  margin-top: 24px;
+}
+
+.contact-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-navy);
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-weight: normal;
+  color: var(--color-text);
+}
+
+.contact-form button {
+  justify-self: start;
+}
+
+.direct-contact {
+  margin-top: 24px;
+}
+
+/* FOOTER */
+.site-footer {
+  background: var(--color-navy);
+  color: #cdd6df;
+  padding: 32px 0;
+  font-size: 0.85rem;
+}
+
+.footer-inner p {
+  margin: 4px 0;
+}
+
+.footer-small {
+  color: #8fa0b3;
+}
+
+/* RESPONSIVE */
+@media (max-width: 760px) {
+  .main-nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--color-bg);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px 20px;
+    border-bottom: 1px solid #e5e2db;
+    display: none;
+  }
+
+  .main-nav.open {
+    display: flex;
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+
+  .hero {
+    padding: 60px 0;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+}
