@@ -307,6 +307,16 @@ a {
   margin-top: 16px;
 }
 
+.award-line {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  margin-top: 4px;
+}
+
+.award-line a {
+  color: var(--color-gold);
+}
+
 @media (max-width: 760px) {
   .about-inner {
     flex-direction: column;
