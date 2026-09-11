@@ -370,6 +370,34 @@ a {
   font-size: 0.9rem;
 }
 
+/* TESTIMONIALS */
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  margin: 24px 0;
+}
+
+.testimonial {
+  background: #fff;
+  border: 1px solid #e5e2db;
+  border-radius: 6px;
+  padding: 20px 24px;
+  margin: 0;
+}
+
+.testimonial p {
+  font-style: italic;
+  color: var(--color-text);
+  margin: 0 0 12px;
+}
+
+.testimonial cite {
+  font-style: normal;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
 /* FAQ */
 .faq-item {
   border-bottom: 1px solid #e5e2db;
