@@ -19,8 +19,11 @@ mainNav.querySelectorAll('a').forEach((link) => {
 document.getElementById('year').textContent = new Date().getFullYear();
 
 // Contact form — placeholder handler until wired to a Cloudflare Pages Function
+// (not present on every page, e.g. /new-construction/, so guard against null)
 const contactForm = document.getElementById('contact-form');
-contactForm.addEventListener('submit', (e) => {
-  e.preventDefault();
-  alert('Thanks! Form submission isn\'t wired up to send yet — we\'ll connect this once the site is deployed to Cloudflare.');
-});
+if (contactForm) {
+  contactForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    alert('Thanks! Form submission isn\'t wired up to send yet — we\'ll connect this once the site is deployed to Cloudflare.');
+  });
+}

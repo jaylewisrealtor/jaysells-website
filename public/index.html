@@ -7,62 +7,118 @@
 <!-- ============================================================
      SEO: Title + meta description
      These two are what shows up in Google search results.
-     Keep title under ~60 characters, description under ~155.
+     Keep title under ~60 characters, description under ~160.
      ============================================================ -->
-<title>Jay Lewis Realtor | Edmonton Area Real Estate Agent</title>
-<meta name="description" content="Jay Lewis helps buyers and sellers across Edmonton, St. Albert, Sherwood Park, Spruce Grove, Leduc and surrounding communities. Get local market expertise you can trust.">
+<title>Edmonton REALTOR&reg; &amp; New Construction Expert | Jay Lewis</title>
+<meta name="description" content="Jay Lewis, REALTOR&reg; with RE/MAX Excellence, serves Edmonton and area with 20+ years of construction experience and expertise in new construction, buyers and sellers.">
 <link rel="canonical" href="https://jaysells.ca/">
 
 <!-- Open Graph / social sharing preview (Facebook, LinkedIn, iMessage, etc.) -->
 <meta property="og:type" content="website">
-<meta property="og:title" content="Jay Lewis Realtor | Edmonton Area Real Estate Agent">
-<meta property="og:description" content="Buying or selling in the Edmonton area? Jay Lewis provides local expertise across St. Albert, Sherwood Park, Spruce Grove, Leduc, and more.">
+<meta property="og:title" content="Edmonton REALTOR&reg; &amp; New Construction Expert | Jay Lewis">
+<meta property="og:description" content="REALTOR&reg; with RE/MAX Excellence serving Edmonton and surrounding communities, with 20+ years of residential construction experience.">
 <meta property="og:url" content="https://jaysells.ca/">
 <meta property="og:locale" content="en_CA">
 
 <!-- Twitter/X card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Jay Lewis Realtor | Edmonton Area Real Estate Agent">
-<meta name="twitter:description" content="Local real estate expertise for buyers and sellers across the Edmonton area.">
+<meta name="twitter:title" content="Edmonton REALTOR&reg; &amp; New Construction Expert | Jay Lewis">
+<meta name="twitter:description" content="REALTOR&reg; with RE/MAX Excellence serving Edmonton and area, with 20+ years of residential construction experience.">
 
 <link rel="stylesheet" href="css/style.css">
 
 <!-- ============================================================
      GEO/AEO: Structured data (JSON-LD)
-     This is a machine-readable summary of the business that
-     Google, Bing, and AI answer engines (ChatGPT, Perplexity,
-     Google AI Overviews) read directly to answer questions like
-     "who is a realtor in St. Albert" without needing to guess
-     from the page's visual layout.
+     A machine-readable map of the real entities on this page —
+     Jay Lewis (Person) -> REALTOR(R) -> RE/MAX Excellence (Organization)
+     -> Edmonton/Greater Edmonton (areaServed) -> services offered.
+     This is what lets Google, Bing, and AI answer engines (ChatGPT,
+     Perplexity, Google AI Overviews) answer questions about Jay
+     directly instead of guessing from page layout. No ratings,
+     awards, phone numbers, or review counts are included below
+     because none are verified yet — do not add them until real,
+     confirmed data exists.
      ============================================================ -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "RealEstateAgent",
-  "name": "Jay Lewis Realtor",
-  "url": "https://jaysells.ca/",
-  "email": "jay@jaysells.ca",
-  "areaServed": [
-    {"@type": "City", "name": "Edmonton"},
-    {"@type": "City", "name": "Beaumont"},
-    {"@type": "City", "name": "Devon"},
-    {"@type": "City", "name": "Fort Saskatchewan"},
-    {"@type": "City", "name": "Leduc"},
-    {"@type": "City", "name": "Morinville"},
-    {"@type": "City", "name": "Onoway"},
-    {"@type": "City", "name": "Sherwood Park"},
-    {"@type": "City", "name": "Spruce Grove"},
-    {"@type": "City", "name": "St. Albert"},
-    {"@type": "City", "name": "Stony Plain"}
-  ],
-  "address": {
-    "@type": "PostalAddress",
-    "addressRegion": "AB",
-    "addressCountry": "CA"
-  }
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://jaysells.ca/#remax-excellence",
+      "name": "RE/MAX Excellence",
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "AB",
+        "addressCountry": "CA"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://jaysells.ca/#jay-lewis",
+      "name": "Jay Lewis",
+      "jobTitle": "REALTOR®",
+      "url": "https://jaysells.ca/",
+      "email": "jay@jaysells.ca",
+      "worksFor": { "@id": "https://jaysells.ca/#remax-excellence" },
+      "knowsAbout": [
+        "New construction real estate",
+        "Residential construction",
+        "Home buying",
+        "Home selling",
+        "Edmonton real estate market"
+      ]
+    },
+    {
+      "@type": "RealEstateAgent",
+      "@id": "https://jaysells.ca/#jay-lewis-practice",
+      "name": "Jay Lewis Realtor",
+      "url": "https://jaysells.ca/",
+      "email": "jay@jaysells.ca",
+      "employee": { "@id": "https://jaysells.ca/#jay-lewis" },
+      "memberOf": { "@id": "https://jaysells.ca/#remax-excellence" },
+      "areaServed": [
+        {"@type": "City", "name": "Edmonton"},
+        {"@type": "City", "name": "Sherwood Park"},
+        {"@type": "City", "name": "St. Albert"},
+        {"@type": "City", "name": "Spruce Grove"},
+        {"@type": "City", "name": "Stony Plain"},
+        {"@type": "City", "name": "Fort Saskatchewan"},
+        {"@type": "City", "name": "Beaumont"},
+        {"@type": "City", "name": "Leduc"},
+        {"@type": "City", "name": "Devon"},
+        {"@type": "City", "name": "Morinville"},
+        {"@type": "City", "name": "Onoway"}
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "AB",
+        "addressCountry": "CA"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://jaysells.ca/#website",
+      "name": "Jay Lewis Realtor",
+      "url": "https://jaysells.ca/"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://jaysells.ca/#webpage",
+      "url": "https://jaysells.ca/",
+      "name": "Edmonton REALTOR® & New Construction Expert | Jay Lewis",
+      "isPartOf": { "@id": "https://jaysells.ca/#website" },
+      "about": { "@id": "https://jaysells.ca/#jay-lewis-practice" }
+    }
+  ]
 }
 </script>
 
+<!--
+  FAQPage schema below intentionally matches the visible FAQ section
+  word-for-word (Google guidance: structured data must reflect visible
+  page content). If the FAQ copy changes, update this block too.
+-->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -70,34 +126,66 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Do you help both buyers and sellers in the Edmonton area?",
+      "name": "Should I buy new construction or resale in Edmonton?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Jay Lewis works with both home buyers and sellers across Edmonton and surrounding communities, providing local market guidance, pricing strategy, and negotiation support for both sides of a transaction."
+        "text": "Both have trade-offs. New construction offers newer systems, warranties and customization, but requires understanding builder reputations, specifications and contracts. Resale homes offer established neighbourhoods and known pricing history, but may need updates. Jay's residential construction background helps buyers evaluate both options based on the actual condition and value of a property, not just its age."
       }
     },
     {
       "@type": "Question",
-      "name": "What areas does Jay Lewis serve?",
+      "name": "Do I need a REALTOR® when buying from an Edmonton home builder?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Jay Lewis serves Edmonton and the surrounding communities of Beaumont, Devon, Fort Saskatchewan, Leduc, Morinville, Onoway, Sherwood Park, Spruce Grove, St. Albert, and Stony Plain."
+        "text": "Builders' sales representatives work for the builder, not the buyer. A buyer's REALTOR® reviews contracts, upgrade pricing, lot selection and walkthrough details on the buyer's behalf. Compensation and representation terms should be discussed and documented clearly before a buyer enters into an agreement with a builder."
       }
     },
     {
       "@type": "Question",
-      "name": "How much does it cost to use a realtor when buying a home?",
+      "name": "What should I look for when choosing an Edmonton home builder?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "In most cases in Alberta, the home seller pays the commission for both the listing agent and the buyer's agent, meaning there is typically no direct cost to the buyer to be represented by a realtor."
+        "text": "Key factors include the builder's track record on similar homes, warranty coverage, standard specifications versus upgrades, construction timelines, and how deficiencies are handled after possession. Jay's background in residential construction is used to review these details with buyers before they commit."
       }
     },
     {
       "@type": "Question",
-      "name": "What is the first step to selling my home?",
+      "name": "What should I check during a new-home walkthrough?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The first step is a no-obligation home evaluation and market analysis. This gives you a realistic price range based on recent comparable sales in your specific neighborhood before you decide anything else."
+        "text": "A pre-possession walkthrough should cover finishes, fixtures, appliances, doors and windows, paint, flooring, and confirmation that upgrades match the contract. Noting deficiencies in writing before possession makes it easier to have them addressed by the builder."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What areas around Edmonton have new construction?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "New construction is active in communities including Edmonton, Beaumont, Leduc, Spruce Grove, Stony Plain and Fort Saskatchewan, among others. Availability changes as communities develop, so current options are best confirmed directly."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does the first-time home buyer GST rebate work on a new home?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The GST new housing rebate can reduce the amount of GST paid on a new home, and eligibility and rebate amounts depend on the purchase price, intended use of the property, and current federal program rules, which have changed in recent years. Because these rules affect every situation differently, buyers should confirm current GST rebate details with their builder, lawyer or a tax professional before relying on a specific number."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does it cost to sell a home in Edmonton?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Selling costs typically include REALTOR® commission, legal fees, and any costs related to preparing the home for sale. Commission is negotiated between the seller and their brokerage and varies by situation, so exact costs should be discussed directly before listing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which communities does Jay Lewis serve?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Jay Lewis works with buyers and sellers throughout Edmonton and surrounding communities, including Sherwood Park, St. Albert, Spruce Grove, Stony Plain, Fort Saskatchewan, Beaumont, Leduc and Devon."
       }
     }
   ]
@@ -111,6 +199,7 @@
     <a href="/" class="logo">Jay Lewis <span>Realtor</span></a>
     <nav class="main-nav" id="main-nav">
       <a href="#buyers">Buyers</a>
+      <a href="#new-construction">New Construction</a>
       <a href="#sellers">Sellers</a>
       <a href="#areas">Areas Served</a>
       <a href="#about">About</a>
@@ -128,25 +217,45 @@
   <!-- HERO -->
   <section class="hero">
     <div class="container hero-inner">
-      <h1>Local Real Estate Expertise for Greater Edmonton</h1>
-      <p class="hero-sub">Helping buyers and sellers across Edmonton, St. Albert, Sherwood Park, Spruce Grove, Leduc, and surrounding communities make confident real estate decisions.</p>
+      <h1>Edmonton REALTOR&reg; for Homes, New Construction &amp; Real Estate</h1>
+      <p class="hero-sub">Jay Lewis is a RE/MAX Excellence REALTOR&reg; helping buyers and sellers across Edmonton, Sherwood Park, St. Albert, Spruce Grove, Fort Saskatchewan, Beaumont, Leduc and surrounding communities. With more than 20 years of residential construction experience, Jay brings practical building knowledge to new-home purchases, resale homes, negotiations, inspections and property decisions.</p>
       <div class="hero-actions">
-        <a href="#buyers" class="btn btn-primary">I'm Looking to Buy</a>
-        <a href="#sellers" class="btn btn-secondary">I'm Looking to Sell</a>
+        <a href="#home-search" class="btn btn-primary">Search Homes</a>
+        <a href="#new-construction" class="btn btn-secondary">Explore New Construction</a>
       </div>
+    </div>
+  </section>
+
+  <!-- HOME SEARCH (bridge to a future live MLS/IDX search) -->
+  <section id="home-search" class="section">
+    <div class="container">
+      <h2>Search Homes Across Greater Edmonton</h2>
+      <p>Looking for a full, searchable list of homes for sale? Jay can set you up with a personalized search that updates as new listings hit the market across Edmonton, Sherwood Park, St. Albert, Spruce Grove and surrounding communities — filtered to what actually matters to you.</p>
+      <a href="#contact" class="btn btn-primary">Get Your Personalized Search</a>
+    </div>
+  </section>
+
+  <!-- NEW CONSTRUCTION -->
+  <section id="new-construction" class="section section-alt">
+    <div class="container">
+      <h2>Buying a New Construction Home in Edmonton?</h2>
+      <p>New construction requires a different kind of representation. With more than 20 years of residential construction experience, Jay Lewis helps buyers evaluate builders, communities, lots, specifications, upgrades, contracts, walkthroughs and deficiencies &mdash; not simply find a house.</p>
+      <p>Whether you're considering a quick-possession home, building from the ground up or comparing a new home with resale, the goal is to understand what you're buying before you commit.</p>
+      <a href="/new-construction/" class="btn btn-primary">Explore Edmonton New Construction</a>
     </div>
   </section>
 
   <!-- BUYERS -->
   <section id="buyers" class="section">
     <div class="container">
-      <h2>For Buyers</h2>
-      <p>Finding the right home in the right neighborhood starts with knowing the local market — school catchments, commute times, resale trends, and what's actually available before it's public. Jay works directly with buyers at every step, from your first search to closing day.</p>
+      <h2>Buying a Home in Greater Edmonton</h2>
+      <p>Finding the right home involves more than scrolling listings. Jay helps buyers compare neighbourhoods, understand recent sales, evaluate property condition and value, structure offers and identify potential issues before making a major financial commitment.</p>
+      <p>Search homes throughout Edmonton and surrounding communities, or explore detailed local guides to <a href="/new-construction/">new construction</a>, acreages, condos, townhomes, bungalows, homes with legal suites and quick possessions &mdash; coming soon as dedicated resources on this site.</p>
       <ul class="check-list">
-        <li>Personalized home search across the entire Edmonton region</li>
-        <li>Straight talk on pricing, so you don't overpay</li>
-        <li>Guidance through offers, conditions, and negotiation</li>
-        <li>A network of trusted inspectors, lenders, and lawyers</li>
+        <li>Personalized home search across Edmonton and surrounding communities</li>
+        <li>Factual guidance on pricing and property condition</li>
+        <li>Offer structuring, conditions and negotiation support</li>
+        <li>Construction background applied to inspections and new-home evaluations</li>
       </ul>
       <a href="#contact" class="btn btn-primary">Start Your Home Search</a>
     </div>
@@ -155,13 +264,14 @@
   <!-- SELLERS -->
   <section id="sellers" class="section section-alt">
     <div class="container">
-      <h2>For Sellers</h2>
-      <p>Selling your home is about more than putting up a sign. Jay provides a clear pricing strategy based on real comparable sales in your neighborhood, professional presentation, and a marketing plan built to reach serious buyers quickly.</p>
+      <h2>Selling a Home in Greater Edmonton</h2>
+      <p>Pricing a home accurately requires current, local comparable sales data. Jay works with sellers on pricing strategy, property preparation, and a marketing plan designed to reach buyers actively searching in the area. When offers come in, Jay reviews terms and conditions with sellers, negotiates on their behalf, and provides guidance through to closing.</p>
       <ul class="check-list">
-        <li>Free, no-obligation home evaluation</li>
-        <li>Comparable sales analysis for your specific area</li>
-        <li>Professional listing marketing and exposure</li>
-        <li>Skilled negotiation to get you the best terms</li>
+        <li>Pricing strategy based on recent comparable sales</li>
+        <li>Guidance on preparing a property for market</li>
+        <li>Professional marketing and listing exposure</li>
+        <li>Review and negotiation of offers and conditions</li>
+        <li>Transaction guidance through to closing</li>
       </ul>
       <a href="#contact" class="btn btn-primary">Get a Free Home Evaluation</a>
     </div>
@@ -171,19 +281,19 @@
   <section id="areas" class="section">
     <div class="container">
       <h2>Areas Served</h2>
-      <p>Proudly serving buyers and sellers throughout Edmonton and these surrounding communities:</p>
+      <p>Jay works with buyers and sellers across Edmonton real estate, Sherwood Park homes for sale, St. Albert real estate, and the surrounding communities of Spruce Grove, Stony Plain, Fort Saskatchewan, Beaumont, Leduc and Devon. Dedicated community guides for each of these areas are planned as this site grows.</p>
       <div class="areas-grid">
         <span>Edmonton</span>
-        <span>Beaumont</span>
-        <span>Devon</span>
+        <span>Sherwood Park</span>
+        <span>St. Albert</span>
+        <span>Spruce Grove</span>
+        <span>Stony Plain</span>
         <span>Fort Saskatchewan</span>
+        <span>Beaumont</span>
         <span>Leduc</span>
+        <span>Devon</span>
         <span>Morinville</span>
         <span>Onoway</span>
-        <span>Sherwood Park</span>
-        <span>Spruce Grove</span>
-        <span>St. Albert</span>
-        <span>Stony Plain</span>
       </div>
       <p class="areas-note">Don't see your community listed? <a href="#contact">Reach out</a> — chances are it's still covered.</p>
     </div>
@@ -194,56 +304,84 @@
     <div class="container about-inner">
       <div>
         <h2>About Jay Lewis</h2>
-        <p>
-          <!-- TODO(Jay): Replace this paragraph with your real bio — years of experience,
-               why you got into real estate, what makes your approach different, and your
-               brokerage name (often required for advertising compliance in Alberta). -->
-          Jay Lewis is a dedicated real estate professional serving the Edmonton region,
-          committed to giving buyers and sellers clear, honest guidance through one of
-          the biggest financial decisions they'll make.
-        </p>
-        <p class="brokerage-line">[Your Brokerage Name] &middot; Edmonton, Alberta</p>
+        <p>Jay Lewis is a REALTOR&reg; with RE/MAX Excellence serving Edmonton and surrounding communities. Before real estate, Jay spent more than 20 years working in residential construction, including framing, renovations and complete contract builds.</p>
+        <p>That construction background now plays an important role in how he represents buyers &mdash; particularly people purchasing new construction. Jay helps clients look beyond finishes and floor plans to understand lots, specifications, upgrades, construction details, walkthroughs and deficiencies.</p>
+        <p>He represents buyers and sellers throughout Greater Edmonton, including Sherwood Park, St. Albert, Spruce Grove, Stony Plain, Fort Saskatchewan, Beaumont, Leduc and surrounding communities.</p>
+        <p class="brokerage-line">RE/MAX Excellence &middot; Edmonton, Alberta</p>
       </div>
     </div>
   </section>
 
+  <!-- TRUST / CREDIBILITY -->
+  <section id="trust" class="section">
+    <div class="container">
+      <h2>Why Work With Jay</h2>
+      <ul class="check-list">
+        <li>REALTOR&reg; with RE/MAX Excellence</li>
+        <li>20+ years of residential construction experience</li>
+        <li>Buyer and seller representation throughout Greater Edmonton</li>
+        <li>Specialized support for new-construction buyers</li>
+      </ul>
+    </div>
+  </section>
+
   <!-- FAQ -->
-  <section id="faq" class="section">
+  <section id="faq" class="section section-alt">
     <div class="container">
       <h2>Frequently Asked Questions</h2>
 
       <div class="faq-item">
-        <h3>Do you help both buyers and sellers in the Edmonton area?</h3>
-        <p>Yes. Jay works with both home buyers and sellers across Edmonton and surrounding communities, providing local market guidance, pricing strategy, and negotiation support for both sides of a transaction.</p>
+        <h3>Should I buy new construction or resale in Edmonton?</h3>
+        <p>Both have trade-offs. New construction offers newer systems, warranties and customization, but requires understanding builder reputations, specifications and contracts. Resale homes offer established neighbourhoods and known pricing history, but may need updates. Jay's residential construction background helps buyers evaluate both options based on the actual condition and value of a property, not just its age.</p>
       </div>
 
       <div class="faq-item">
-        <h3>What areas does Jay Lewis serve?</h3>
-        <p>Edmonton, Beaumont, Devon, Fort Saskatchewan, Leduc, Morinville, Onoway, Sherwood Park, Spruce Grove, St. Albert, and Stony Plain.</p>
+        <h3>Do I need a REALTOR&reg; when buying from an Edmonton home builder?</h3>
+        <p>Builders' sales representatives work for the builder, not the buyer. A buyer's REALTOR&reg; reviews contracts, upgrade pricing, lot selection and walkthrough details on the buyer's behalf. Compensation and representation terms should be discussed and documented clearly before a buyer enters into an agreement with a builder.</p>
       </div>
 
       <div class="faq-item">
-        <h3>How much does it cost to use a realtor when buying a home?</h3>
-        <p>In most cases in Alberta, the seller pays commission for both the listing agent and the buyer's agent, so there is typically no direct cost to you as a buyer to be represented.</p>
+        <h3>What should I look for when choosing an Edmonton home builder?</h3>
+        <p>Key factors include the builder's track record on similar homes, warranty coverage, standard specifications versus upgrades, construction timelines, and how deficiencies are handled after possession. Jay's background in residential construction is used to review these details with buyers before they commit.</p>
       </div>
 
       <div class="faq-item">
-        <h3>What is the first step to selling my home?</h3>
-        <p>A free, no-obligation home evaluation and market analysis, based on recent comparable sales in your specific neighborhood — before you commit to anything.</p>
+        <h3>What should I check during a new-home walkthrough?</h3>
+        <p>A pre-possession walkthrough should cover finishes, fixtures, appliances, doors and windows, paint, flooring, and confirmation that upgrades match the contract. Noting deficiencies in writing before possession makes it easier to have them addressed by the builder.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>What areas around Edmonton have new construction?</h3>
+        <p>New construction is active in communities including Edmonton, Beaumont, Leduc, Spruce Grove, Stony Plain and Fort Saskatchewan, among others. Availability changes as communities develop, so current options are best confirmed directly.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>How does the first-time home buyer GST rebate work on a new home?</h3>
+        <p>The GST new housing rebate can reduce the amount of GST paid on a new home, and eligibility and rebate amounts depend on the purchase price, intended use of the property, and current federal program rules, which have changed in recent years. Because these rules affect every situation differently, buyers should confirm current GST rebate details with their builder, lawyer or a tax professional before relying on a specific number.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>How much does it cost to sell a home in Edmonton?</h3>
+        <p>Selling costs typically include REALTOR&reg; commission, legal fees, and any costs related to preparing the home for sale. Commission is negotiated between the seller and their brokerage and varies by situation, so exact costs should be discussed directly before listing.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Which communities does Jay Lewis serve?</h3>
+        <p>Jay Lewis works with buyers and sellers throughout Edmonton and surrounding communities, including Sherwood Park, St. Albert, Spruce Grove, Stony Plain, Fort Saskatchewan, Beaumont, Leduc and Devon.</p>
       </div>
     </div>
   </section>
 
   <!-- CONTACT -->
-  <section id="contact" class="section section-alt">
+  <section id="contact" class="section">
     <div class="container">
       <h2>Get in Touch</h2>
       <p>Whether you're just starting to think about a move or ready to list this week, reach out — there's no obligation.</p>
 
       <!--
-        NOTE: This form is UI-only for now. Once we deploy to Cloudflare Pages,
-        we'll wire this up to a Cloudflare Pages Function so submissions actually
-        send you an email lead notification. Explained in the deployment step.
+        NOTE: This form is UI-only for now. Once the GitHub Actions /
+        Cloudflare deploy is fully wired up, connect this to a Worker
+        route so submissions actually send a lead notification email.
       -->
       <form class="contact-form" id="contact-form">
         <label>
@@ -258,6 +396,7 @@
           I am a...
           <select name="role">
             <option>Buyer</option>
+            <option>New Construction Buyer</option>
             <option>Seller</option>
             <option>Both / Not sure yet</option>
           </select>
@@ -278,7 +417,7 @@
 <footer class="site-footer">
   <div class="container footer-inner">
     <p>&copy; <span id="year"></span> Jay Lewis Realtor. Serving Edmonton and area.</p>
-    <p class="footer-small">[Your Brokerage Name] &middot; [RECA license # if required] &middot; Not intended to solicit properties already listed.</p>
+    <p class="footer-small">RE/MAX Excellence &middot; [RECA license # if required] &middot; Not intended to solicit properties already listed.</p>
   </div>
 </footer>
 
