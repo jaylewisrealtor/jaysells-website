@@ -243,10 +243,37 @@ a {
 }
 
 /* ABOUT */
+.about-inner {
+  display: flex;
+  gap: 48px;
+  align-items: flex-start;
+}
+
+.about-photo {
+  width: 260px;
+  height: auto;
+  flex-shrink: 0;
+  border-radius: 6px;
+  object-fit: cover;
+  box-shadow: 0 12px 30px rgba(15, 42, 67, 0.18);
+}
+
 .brokerage-line {
   font-size: 0.9rem;
   color: var(--color-text-muted);
   margin-top: 16px;
+}
+
+@media (max-width: 760px) {
+  .about-inner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-photo {
+    width: 200px;
+  }
 }
 
 /* FAQ */
