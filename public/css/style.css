@@ -370,6 +370,11 @@ a {
   font-size: 0.9rem;
 }
 
+.awards-heading {
+  font-size: 1.1rem;
+  margin: 32px 0 12px;
+}
+
 /* TESTIMONIALS */
 .testimonials-grid {
   display: grid;
