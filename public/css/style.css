@@ -119,7 +119,9 @@ a {
 
 /* HERO */
 .hero {
-  background: linear-gradient(135deg, var(--color-navy), var(--color-navy-light));
+  background:
+    linear-gradient(135deg, rgba(15, 42, 67, 0.85), rgba(22, 56, 90, 0.78)),
+    url('/images/hero-construction.jpg') center 30% / cover no-repeat;
   color: #fff;
   padding: 90px 0;
   text-align: center;
@@ -240,6 +242,47 @@ a {
 
 .areas-note {
   font-size: 0.9rem;
+}
+
+.areas-photo {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 6px;
+  margin: 24px 0;
+  display: block;
+}
+
+/* NEW CONSTRUCTION */
+.new-construction-inner {
+  display: flex;
+  gap: 48px;
+  align-items: center;
+}
+
+.new-construction-inner > div {
+  flex: 1;
+}
+
+.new-construction-photo {
+  width: 45%;
+  max-width: 480px;
+  height: auto;
+  flex-shrink: 0;
+  border-radius: 6px;
+  object-fit: cover;
+  box-shadow: 0 12px 30px rgba(15, 42, 67, 0.18);
+}
+
+@media (max-width: 760px) {
+  .new-construction-inner {
+    flex-direction: column;
+  }
+
+  .new-construction-photo {
+    width: 100%;
+    max-width: none;
+  }
 }
 
 /* ABOUT */
