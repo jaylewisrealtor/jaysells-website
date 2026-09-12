@@ -181,6 +181,26 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://jaysells.ca/leduc/alexandra-park/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://jaysells.ca/leduc/southfork/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://jaysells.ca/leduc/meadowview-park/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://jaysells.ca/leduc/corinthia-park/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://jaysells.ca/devon/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
