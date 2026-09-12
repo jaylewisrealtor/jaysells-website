@@ -141,6 +141,10 @@ a {
   font-size: 1.1rem;
 }
 
+.hero-sub a {
+  color: #fff;
+}
+
 .hero-actions {
   display: flex;
   gap: 16px;
