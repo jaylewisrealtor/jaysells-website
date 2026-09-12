@@ -106,6 +106,26 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://jaysells.ca/stony-plain/old-town/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://jaysells.ca/stony-plain/graybriar/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://jaysells.ca/stony-plain/the-fairways/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://jaysells.ca/stony-plain/rosenthal-estates/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://jaysells.ca/fort-saskatchewan/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
