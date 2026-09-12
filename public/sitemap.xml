@@ -156,6 +156,26 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://jaysells.ca/beaumont/four-seasons-estates/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://jaysells.ca/beaumont/montalet/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://jaysells.ca/beaumont/forest-heights/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://jaysells.ca/beaumont/elan/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://jaysells.ca/leduc/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
