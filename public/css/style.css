@@ -230,7 +230,8 @@ a {
   max-width: 800px;
 }
 
-.areas-grid span {
+.areas-grid span,
+.areas-grid a {
   background: var(--color-bg-alt);
   border: 1px solid #e5e2db;
   border-radius: 4px;
@@ -238,6 +239,11 @@ a {
   text-align: center;
   font-weight: 600;
   color: var(--color-navy);
+  text-decoration: none;
+}
+
+.areas-grid a:hover {
+  border-color: var(--color-gold);
 }
 
 .areas-note {
