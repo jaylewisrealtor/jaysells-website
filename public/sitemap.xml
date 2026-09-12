@@ -131,6 +131,26 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://jaysells.ca/fort-saskatchewan/westpark/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://jaysells.ca/fort-saskatchewan/pineview/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://jaysells.ca/fort-saskatchewan/sherridon-heights/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://jaysells.ca/fort-saskatchewan/old-fort-saskatchewan/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://jaysells.ca/beaumont/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
