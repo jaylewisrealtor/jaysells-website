@@ -263,6 +263,34 @@ a {
   display: block;
 }
 
+.content-photo {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 6px;
+  margin: 24px 0;
+  display: block;
+}
+
+/* HERO PHOTO VARIANTS (community pages) */
+.hero-street-summer {
+  background:
+    linear-gradient(135deg, rgba(15, 42, 67, 0.85), rgba(22, 56, 90, 0.78)),
+    url('/images/hero-street-summer.jpg') center 40% / cover no-repeat;
+}
+
+.hero-street-autumn {
+  background:
+    linear-gradient(135deg, rgba(15, 42, 67, 0.85), rgba(22, 56, 90, 0.78)),
+    url('/images/hero-street-autumn.jpg') center 40% / cover no-repeat;
+}
+
+.hero-street-winter {
+  background:
+    linear-gradient(135deg, rgba(15, 42, 67, 0.85), rgba(22, 56, 90, 0.78)),
+    url('/images/hero-street-winter.jpg') center 40% / cover no-repeat;
+}
+
 /* NEW CONSTRUCTION */
 .new-construction-inner {
   display: flex;
@@ -290,6 +318,38 @@ a {
   }
 
   .new-construction-photo {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+/* BUYERS */
+.buyers-inner {
+  display: flex;
+  gap: 48px;
+  align-items: center;
+}
+
+.buyers-inner > div {
+  flex: 1;
+}
+
+.buyers-photo {
+  width: 45%;
+  max-width: 480px;
+  height: auto;
+  flex-shrink: 0;
+  border-radius: 6px;
+  object-fit: cover;
+  box-shadow: 0 12px 30px rgba(15, 42, 67, 0.18);
+}
+
+@media (max-width: 760px) {
+  .buyers-inner {
+    flex-direction: column;
+  }
+
+  .buyers-photo {
     width: 100%;
     max-width: none;
   }
