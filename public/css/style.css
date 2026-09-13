@@ -361,6 +361,38 @@ a {
   }
 }
 
+/* SELLERS */
+.sellers-inner {
+  display: flex;
+  gap: 48px;
+  align-items: center;
+}
+
+.sellers-inner > div {
+  flex: 1;
+}
+
+.sellers-photo {
+  width: 45%;
+  max-width: 480px;
+  height: auto;
+  flex-shrink: 0;
+  border-radius: 6px;
+  object-fit: cover;
+  box-shadow: 0 12px 30px rgba(15, 42, 67, 0.18);
+}
+
+@media (max-width: 760px) {
+  .sellers-inner {
+    flex-direction: column;
+  }
+
+  .sellers-photo {
+    width: 100%;
+    max-width: none;
+  }
+}
+
 /* ABOUT */
 .about-inner {
   display: flex;
