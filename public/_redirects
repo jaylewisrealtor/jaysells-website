@@ -1,0 +1,30 @@
+# The public site is https://jaysells.ca. Old pages here redirect to their jaysells.ca replacements.
+# /tools/ and /api/ are not redirected.
+/ https://jaysells.ca/ 301
+/new-construction https://jaysells.ca/edmonton-new-construction.html 301
+/new-construction/ https://jaysells.ca/edmonton-new-construction.html 301
+/new-construction/* https://jaysells.ca/edmonton-new-construction.html 301
+/spruce-grove https://jaysells.ca/new-construction-spruce-grove.html 301
+/spruce-grove/ https://jaysells.ca/new-construction-spruce-grove.html 301
+/spruce-grove/* https://jaysells.ca/new-construction-spruce-grove.html 301
+/sherwood-park https://jaysells.ca/sherwood-park-real-estate.html 301
+/sherwood-park/ https://jaysells.ca/sherwood-park-real-estate.html 301
+/sherwood-park/* https://jaysells.ca/sherwood-park-real-estate.html 301
+/fort-saskatchewan https://jaysells.ca/fort-saskatchewan-real-estate.html 301
+/fort-saskatchewan/ https://jaysells.ca/fort-saskatchewan-real-estate.html 301
+/fort-saskatchewan/* https://jaysells.ca/fort-saskatchewan-real-estate.html 301
+/stony-plain https://jaysells.ca/stony-plain-real-estate.html 301
+/stony-plain/ https://jaysells.ca/stony-plain-real-estate.html 301
+/stony-plain/* https://jaysells.ca/stony-plain-real-estate.html 301
+/devon https://jaysells.ca/devon-real-estate.html 301
+/devon/ https://jaysells.ca/devon-real-estate.html 301
+/devon/* https://jaysells.ca/devon-real-estate.html 301
+/st-albert https://jaysells.ca/st-albert-real-estate.html 301
+/st-albert/ https://jaysells.ca/st-albert-real-estate.html 301
+/st-albert/* https://jaysells.ca/st-albert-real-estate.html 301
+/leduc https://jaysells.ca/leduc-real-estate.html 301
+/leduc/ https://jaysells.ca/leduc-real-estate.html 301
+/leduc/* https://jaysells.ca/leduc-real-estate.html 301
+/beaumont https://jaysells.ca/beaumont-real-estate.html 301
+/beaumont/ https://jaysells.ca/beaumont-real-estate.html 301
+/beaumont/* https://jaysells.ca/beaumont-real-estate.html 301
