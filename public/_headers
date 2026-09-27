@@ -1,0 +1,4 @@
+# This workers.dev site is a staging/tools copy. The live site is https://jaysells.ca
+# Keep every page out of search indexes so it doesn't compete with jaysells.ca.
+/*
+  X-Robots-Tag: noindex, nofollow

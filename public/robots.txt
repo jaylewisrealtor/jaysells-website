@@ -1,19 +1,24 @@
-# Allow all standard search engine crawlers
+# This workers.dev site is a staging/tools copy, not the public website.
+# The live site is https://jaysells.ca
+#
+# Search engines may crawl so they can see the noindex header on every page
+# (blocking crawling would stop them from seeing it and dropping the pages).
 User-agent: *
 Allow: /
+Disallow: /tools/
 
-# Explicitly allow AI/answer-engine crawlers (GEO/AEO) so tools like
-# ChatGPT, Perplexity, and Google's AI Overviews can read and cite this site.
+# AI crawlers: nothing here to cite. Use https://jaysells.ca instead.
 User-agent: GPTBot
-Allow: /
+Disallow: /
 
 User-agent: Google-Extended
-Allow: /
+Disallow: /
 
 User-agent: PerplexityBot
-Allow: /
+Disallow: /
 
 User-agent: ClaudeBot
-Allow: /
+Disallow: /
 
-Sitemap: https://jaysells.ca/sitemap.xml
+User-agent: CCBot
+Disallow: /
